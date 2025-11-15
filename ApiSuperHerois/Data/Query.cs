@@ -7,12 +7,12 @@ public class Query
     [UseProjection]
     [UseFiltering]
     [UseSorting]
-    public IQueryable<SuperHeroi> GetSuperherois([Service] AppDbContext context) =>
-        context.SuperHerois;
+    public IQueryable<SuperHeroi> GetSuperherois([Service] AppDbContext context) 
+		=> context.SuperHerois;
 
 	[UseProjection]
 	[UseFiltering]
 	[UseSorting]
-	public IQueryable<Filme> GetFilmes([Service] AppDbContext context) =>
-	context.Filmes;
+	public IQueryable<Filme> GetFilmes([Service] AppDbContext context) 
+		=> context.Filmes;
 }
